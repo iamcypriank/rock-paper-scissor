@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <div class="game-board">
+            <img id="confetti" src="src/confetti.gif" alt="">
+            <audio id="winning-sound" src="src/Victory Sound Effect.mp3"></audio>
+            <h1 style="text-align: center;">Rock - Paper - Scissor</h1>
+            <div class="score-board">
+                <p id="p-score">Player Score  : </p>
+                <p id="c-score">Computer Score : </p>
+            </div>
+            
+            <div class="choice">
+                <p id="p-choice">Player Choice : </p>
+                <p id="c-choice">Computer Choice : </p>
+            </div>
+            <h3 id="result"></h3>
+            <div class="user-input">
+                <button id="choice" value="rock" onclick="getHumanChoice(this)">Rock 🪨</button>
+                <button id="choice" value="paper" onclick="getHumanChoice(this)">Paper 📃</button>
+                <button id="choice" value="scissor" onclick="getHumanChoice(this)">Scissor ✂️</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
+<script src="index.js"></script>
+</html>
